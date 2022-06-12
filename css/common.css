@@ -10,6 +10,7 @@ body {
     font-family: 'Pretendard';
     font-size: 16.45px;
     color: #2e2e2e;
+    overflow-x: hidden;
 }
 p {
     line-height: 24px;
@@ -18,12 +19,15 @@ p {
     width: 100%;
     margin: 0 auto;
 }
+.inner {
+    width: 1500px;
+    margin: auto;
+}
 .clear {
     clear: both;
 }
 section {
     overflow: hidden;
-    width: 1500px;
     margin: auto;
 }
 h2 {
@@ -96,8 +100,8 @@ h3 {
     animation: elipse_bottom forwards 2s;
 }
 #second {
-    position: relative;
     width: 1500px;
+    position: relative;
     margin: auto;
     color: #3d5afe;
     height: 768px;
@@ -139,7 +143,6 @@ h3 {
 
 #third {
     /* position: relative; */
-    width: 1500px;
     margin: auto;
     background-color: #fbfbfb;
     height: 820px;
@@ -254,12 +257,13 @@ h3 {
 }
 
 #fourth {
-    /* position: relative; */
-    width: 1500px;
     margin: auto;
-    background-image: url(../img/fourth_bg.png);
-    height: 1233px;
+    background-image: url(../img/fourth_bg1.png);
+    background-size: cover;
     text-align: center;
+}
+#fourth .inner {
+    height: 1233px;
 }
 #fourth h2 {
     color: #fff;
@@ -360,19 +364,22 @@ h3 {
     margin-top: 45px;
 }
 #fifth {
-    width: 1500px;
-    height: 842px;
     position: relative;
     margin: auto;
     background-color: #fbfbfb;
 }
+#fifth .inner {
+    height: 842px;
+    position: relative;
+}
 #fifth h2 {
-    margin-top: 177px;
+    top: 177px;
+    position: absolute;
 }
 #fifth h3 {
     font-size: 64px;
     position: absolute;
-    left: 177px;
+    left: 185px;
     top: 55%;
     transform: translate(0, -50%);
     /* margin: 115px 0 0 177px; */
@@ -388,7 +395,6 @@ h3 {
     width: 307px;
 }
 #sixth {
-    width: 1500px;
     height: 585px;
     margin: auto;
 }
@@ -420,7 +426,7 @@ h3 {
     transform: translate(-50%, -50%);
 }
 #seventh {
-    width: 1500px;
+
     height: 1050px;
     margin: auto;
     position: relative;
@@ -545,6 +551,7 @@ h3 {
     height: 1481px;
     margin: auto;
     position: relative;
+    overflow: visible;
 }
 #tenth h2 {
     position: absolute;
@@ -552,16 +559,19 @@ h3 {
     left: 0;
 }
 #tenth img {
-    width: 1500px;
+    width: 1637px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #eleventh {
-    width: 1500px;
-    height: 2559px;
-    margin: auto;
-    position: relative;
     background-color: #dffe22;
     overflow: visible;
+}
+#eleventh .inner {
+    height: 2559px;
+    position: relative;
 }
 #eleventh  #intro_logo, #intro_mockup, #intro_text, #onboarding, #eleventh h3, #expl, #dash, #onboard_img{
     position: absolute;
@@ -574,22 +584,13 @@ h3 {
 #eleventh  #intro_logo {
     top: 193px;
     width: 401.8px;
-    /* left: 50%; */
-    /* transform: translateX(-50%); */
-    /* position: absolute; */
 }
 #eleventh #intro_mockup {
-    /* position: absolute; */
     top: 516px;
-    /* left: 50%; */
-    /* transform: translateX(-50%); */
     width: 792px;
 }
 #eleventh #intro_text {
-    /* position: absolute; */
     top: 338px;
-    /* left: 50%; */
-    /* transform: translateX(-50%); */
     margin: 0;
     font-size: 27px;
     font-weight: 500;
@@ -599,14 +600,11 @@ h3 {
 }
 #eleventh #onboarding {
     top: 1733px;
-    /* left: 50%; */
-    /* transform: translateX(-50%); */
 }
 #eleventh h3 {
     font-weight: 700;
     font-size: 54px;
     top: 1840px;
-    /* left: 50%; */
     color: #3d5afe;
 }
 #eleventh h3 span {
@@ -614,7 +612,6 @@ h3 {
 }
 #eleventh #expl {
     top: 1933px;
-    /* left: 50%; */
     text-align: center;
     color: #3d5afe;
 }
@@ -735,11 +732,14 @@ h3 {
     width: 341px;
 }
 #thirteenth {
-    width: 1500px;
-    margin: auto;
+    /* margin: auto;
     position: relative;
-    height: 3550px;
+    height: 3550px; */
     background-color: #fbfbfb;
+}
+#thirteenth .inner {
+    height: 3550px;
+    position: relative;
 }
 #thirteenth h2 {
     margin-top: 151px;
@@ -760,7 +760,7 @@ h3 {
 }
 #thirteenth #my_pics {
     position: absolute;
-    top: 588px;
+    top: 440px;
     left: 423px;
 }
 #thirteenth #my_pics img {
@@ -788,7 +788,7 @@ h5 {
 #thirteenth #my_side h5 {
     position: absolute;
     top: 165px;
-    left: 444px;
+    left: 450px;
 }
 #thirteenth #my_side p, #thirteenth #my_cal p {
     color: #666;
@@ -825,7 +825,7 @@ h5 {
 }
 #thirteenth #my_cal h5 {
     position: absolute;
-    left: 850px;
+    left: 860px;
     top: 437px;
 }
 #thirteenth #my_cal p {
@@ -925,7 +925,7 @@ h5 {
 #green_1 {
     width: 919px;
     height: 919px;
-    margin: -300px 0 0 650px;
+    margin: -280px 0 0 650px;
 }
 #green_2 {
     width: 923px;
@@ -935,7 +935,7 @@ h5 {
 #green_3 {
     width: 702px;
     height: 702px;
-    margin: 55px 0 0 340px;
+    margin: 55px 0 0 345px;
 }
 
 #fourteenth {
@@ -978,7 +978,6 @@ h5 {
 
 #fifteenth {
     height: 1213px;
-    width: 1500px;
     margin: auto;
     position: relative;
     background-color: #dffe22;
@@ -989,11 +988,11 @@ h5 {
     height: 720px;
 }
 #sixteenth {
-    height: 1337px;
-    width: 1500px;
-    margin: auto;
-    position: relative;
     background-color: #dffe22;
+    
+}
+#sixteenth .inner {
+    height: 1337px;
     background-image: url(../img/outro1.png);
     background-size: contain;
 }
