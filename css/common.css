@@ -398,6 +398,13 @@ h3 {
     height: 585px;
     margin: auto;
 }
+#sixth #blue {
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    height: 585px;
+    background-color: #3d5afe;
+}
 #sixth #sixth_left {
     width: 750px;
     height: 585px;
@@ -416,7 +423,6 @@ h3 {
     height: 585px;
     float: right;
     position: relative;
-    background-color: #3d5afe;
 }
 #sixth #sixth_right img {
     position: absolute;
@@ -426,7 +432,7 @@ h3 {
     transform: translate(-50%, -50%);
 }
 #seventh {
-
+    width: 1500px;
     height: 1050px;
     margin: auto;
     position: relative;
@@ -439,7 +445,7 @@ h3 {
 }
 #seventh p {
     position: absolute;
-    top: 380px;
+    top: 400px;
     left: 500px;
     color: #3d5afe;
 }
